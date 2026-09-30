@@ -98,6 +98,34 @@
    "caption": "Spiral Staircase",
    "credit": "Video: Steven Duque · Pexels",
    "level": "hard"
+  },
+  {
+   "id": "real_butterfly",
+   "reveal": true,
+   "caption": "Butterfly",
+   "credit": "Video: Tường Chopper · Pexels",
+   "level": "easy"
+  },
+  {
+   "id": "real_tulips",
+   "reveal": true,
+   "caption": "Tulips",
+   "credit": "Video: Nicky Pe · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_strawberries",
+   "reveal": true,
+   "caption": "Strawberries",
+   "credit": "Video: Alis View · Pexels",
+   "level": "hard"
+  },
+  {
+   "id": "real_toucan",
+   "reveal": true,
+   "caption": "Toucan",
+   "credit": "Video: Magda Ehlers · Pexels",
+   "level": "medium"
   }
  ],
  "videos": [
@@ -133,6 +161,10 @@
   "soccer",
   "toucan",
   "treehouse",
-  "vehicles_car"
+  "vehicles_car",
+  "real_butterfly",
+  "real_tulips",
+  "real_strawberries",
+  "real_toucan"
  ]
 }
