@@ -126,6 +126,48 @@
    "caption": "Toucan",
    "credit": "Video: Magda Ehlers · Pexels",
    "level": "medium"
+  },
+  {
+   "id": "real_tiger",
+   "reveal": true,
+   "caption": "Bengal Tiger",
+   "credit": "Video: Mytho Digital · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_lorikeet",
+   "reveal": true,
+   "caption": "Rainbow Lorikeet",
+   "credit": "Video: Pixabay · Pexels",
+   "level": "easy"
+  },
+  {
+   "id": "real_umbrellas",
+   "reveal": true,
+   "caption": "Umbrella Canopy",
+   "credit": "Video: Aleks Magnusson · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_balloons",
+   "reveal": true,
+   "caption": "Hot Air Balloons",
+   "credit": "Video: Tolga Aslantürk · Pexels",
+   "level": "easy"
+  },
+  {
+   "id": "real_autumn_forest",
+   "reveal": true,
+   "caption": "Autumn Forest",
+   "credit": "Video: Judas Isariot · Pexels",
+   "level": "hard"
+  },
+  {
+   "id": "real_fishing_boats",
+   "reveal": true,
+   "caption": "Fishing Boats",
+   "credit": "Video: Thanh Văn · Pexels",
+   "level": "hard"
   }
  ],
  "videos": [
@@ -165,6 +207,12 @@
   "real_butterfly",
   "real_tulips",
   "real_strawberries",
-  "real_toucan"
+  "real_toucan",
+  "real_tiger",
+  "real_lorikeet",
+  "real_umbrellas",
+  "real_balloons",
+  "real_autumn_forest",
+  "real_fishing_boats"
  ]
 }
