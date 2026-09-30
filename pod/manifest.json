@@ -168,6 +168,34 @@
    "caption": "Fishing Boats",
    "credit": "Video: Thanh Văn · Pexels",
    "level": "hard"
+  },
+  {
+   "id": "real_lavender",
+   "reveal": true,
+   "caption": "Lavender",
+   "credit": "Video: Marc Onana · Pexels",
+   "level": "hard"
+  },
+  {
+   "id": "real_pencils",
+   "reveal": true,
+   "caption": "Colored Pencils",
+   "credit": "Video: Tuğba Kobal Yılmaz · Pexels",
+   "level": "easy"
+  },
+  {
+   "id": "real_donuts",
+   "reveal": true,
+   "caption": "Donuts",
+   "credit": "Video: Tima Miroshnichenko · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_owl",
+   "reveal": true,
+   "caption": "Owl",
+   "credit": "Video: Rathaphon Nanthapreecha · Pexels",
+   "level": "medium"
   }
  ],
  "videos": [
@@ -213,6 +241,10 @@
   "real_umbrellas",
   "real_balloons",
   "real_autumn_forest",
-  "real_fishing_boats"
+  "real_fishing_boats",
+  "real_lavender",
+  "real_pencils",
+  "real_donuts",
+  "real_owl"
  ]
 }
