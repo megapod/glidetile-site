@@ -1,0 +1,138 @@
+{
+ "version": 1,
+ "daily": [
+  {
+   "id": "real_golden",
+   "reveal": true,
+   "caption": "Golden Retriever",
+   "credit": "Video: Salih Sezgen · Pexels"
+  },
+  {
+   "id": "real_lighthouse",
+   "reveal": true,
+   "caption": "Coast of Portugal",
+   "credit": "Video: Cléviton Caldeira · Pexels"
+  },
+  {
+   "id": "real_scottish_fold",
+   "reveal": true,
+   "caption": "Scottish Fold",
+   "credit": "Video: Natasha Filippovskaya · Pexels"
+  },
+  {
+   "id": "real_macaw",
+   "reveal": true,
+   "caption": "Macaw",
+   "credit": "Video: R Bude · Pexels"
+  },
+  {
+   "id": "vehicles_car",
+   "caption": "Coastal Drive"
+  },
+  {
+   "id": "real_citrus",
+   "reveal": true,
+   "caption": "Citrus",
+   "credit": "Video: Polina · Pexels",
+   "level": "easy"
+  },
+  {
+   "id": "real_kingfisher",
+   "reveal": true,
+   "caption": "Common Kingfisher",
+   "credit": "Video: Mojahid Mottakin · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_clownfish",
+   "reveal": true,
+   "caption": "Clownfish",
+   "credit": "Video: Xacobo de Toro · Pexels",
+   "level": "hard"
+  },
+  {
+   "id": "real_sunflower",
+   "reveal": true,
+   "caption": "Sunflowers",
+   "credit": "Video: ibrahim böke · Pexels",
+   "level": "easy"
+  },
+  {
+   "id": "real_red_panda",
+   "reveal": true,
+   "caption": "Red Panda",
+   "credit": "Video: Ben Blight · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_camogli",
+   "reveal": true,
+   "caption": "Camogli Harbor",
+   "credit": "Video: Pixabay · Pexels",
+   "level": "hard"
+  },
+  {
+   "id": "real_macarons",
+   "reveal": true,
+   "caption": "French Macarons",
+   "credit": "Video: Anh Nguyen · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_zebras",
+   "reveal": true,
+   "caption": "Zebras",
+   "credit": "Video: Taryn Elliott · Pexels",
+   "level": "hard"
+  },
+  {
+   "id": "real_flamingos",
+   "reveal": true,
+   "caption": "Flamingos",
+   "credit": "Video: Brixiv · Pexels",
+   "level": "medium"
+  },
+  {
+   "id": "real_staircase",
+   "reveal": true,
+   "caption": "Spiral Staircase",
+   "credit": "Video: Steven Duque · Pexels",
+   "level": "hard"
+  }
+ ],
+ "videos": [
+  "balloon",
+  "basketball",
+  "beach",
+  "castle",
+  "city",
+  "farm",
+  "fish",
+  "ice_cream",
+  "landscapes_village",
+  "lighthouse",
+  "mountains",
+  "pirate_ship",
+  "racing",
+  "rainbow",
+  "real_camogli",
+  "real_citrus",
+  "real_clownfish",
+  "real_flamingos",
+  "real_golden",
+  "real_kingfisher",
+  "real_lighthouse",
+  "real_macarons",
+  "real_macaw",
+  "real_red_panda",
+  "real_scottish_fold",
+  "real_staircase",
+  "real_sunflower",
+  "real_zebras",
+  "sea_turtle",
+  "soccer",
+  "toucan",
+  "treehouse",
+  "vehicles_car"
+ ]
+}
