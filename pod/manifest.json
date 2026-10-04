@@ -7,6 +7,12 @@
    "level": "medium"
   },
   {
+   "id": "real_golden",
+   "reveal": true,
+   "caption": "Golden Retriever",
+   "credit": "Video: Salih Sezgen · Pexels"
+  },
+  {
    "id": "india_toy_train",
    "caption": "Darjeeling Toy Train",
    "level": "medium"
@@ -35,12 +41,6 @@
    "id": "india_gateway",
    "caption": "Gateway of India",
    "level": "medium"
-  },
-  {
-   "id": "real_golden",
-   "reveal": true,
-   "caption": "Golden Retriever",
-   "credit": "Video: Salih Sezgen · Pexels"
   },
   {
    "id": "real_lighthouse",
