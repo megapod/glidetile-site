@@ -2,6 +2,41 @@
  "version": 1,
  "daily": [
   {
+   "id": "india_hawa_mahal",
+   "caption": "Hawa Mahal, Jaipur",
+   "level": "medium"
+  },
+  {
+   "id": "india_toy_train",
+   "caption": "Darjeeling Toy Train",
+   "level": "medium"
+  },
+  {
+   "id": "india_houseboat",
+   "caption": "Kerala Backwaters",
+   "level": "easy"
+  },
+  {
+   "id": "india_kites",
+   "caption": "Kite Festival",
+   "level": "hard"
+  },
+  {
+   "id": "india_camels",
+   "caption": "Thar Desert",
+   "level": "easy"
+  },
+  {
+   "id": "india_mysore_palace",
+   "caption": "Mysore Palace",
+   "level": "hard"
+  },
+  {
+   "id": "india_gateway",
+   "caption": "Gateway of India",
+   "level": "medium"
+  },
+  {
    "id": "real_golden",
    "reveal": true,
    "caption": "Golden Retriever",
