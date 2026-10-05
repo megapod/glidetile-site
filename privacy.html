@@ -14,10 +14,10 @@ a{color:#1a56c4}
 </head>
 <body>
 <h1>Privacy Policy — GlideTile</h1>
-<p class="small">App: <b>GlideTile</b> (package <code>com.yehuda.glidetile</code>) · Developer: Yehuda P. · Contact: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> · Last updated: October 4, 2026</p>
+<p class="small">App: <b>GlideTile</b> (package <code>com.yehuda.glidetile</code>) · Developer: Yehuda P. · Contact: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> · Last updated: October 5, 2026</p>
 
 <h2>Overview</h2>
-<p>GlideTile is a sliding-tile puzzle game. This policy explains what data is processed when you play, and by whom. The short version: <b>we do not ask for, collect, or store any personal information on our own servers</b>. The game has no account system. The only data processing happens on your device, and by Google services that power ads, usage statistics and purchases.</p>
+<p>GlideTile is a sliding-tile puzzle game. This policy explains what data is processed when you play, and by whom. The short version: <b>we do not store any personal information on our own servers</b>. You can play without any account. Data is processed on your device, and by Google services that power ads, usage statistics and purchases. Only if you choose to play with friends does the game sign you in with Google Play Games, as described below.</p>
 
 <h2>Data stored on your device only</h2>
 <p>Your best times, move counts, and local high-score leaderboard entries (including the player name you type in for a new record) are saved locally on your device. This data never leaves your device and is not uploaded to us or to any server. Uninstalling the app deletes it.</p>
@@ -46,6 +46,11 @@ a{color:#1a56c4}
 <h2>Purchases (Google Play Billing)</h2>
 <p>The game offers one optional purchase, "Remove Ads". The purchase is handled entirely by <b>Google Play</b>: we never see or store your payment details. The game only asks Google Play whether this purchase exists on your Google account, and keeps that yes/no answer on your device so ads stay off.</p>
 
+<h2>Play with friends (optional)</h2>
+<p>Playing at a table with friends is optional, and nothing in this section happens unless you open "Play with friends". When you do, the game signs you in with <b>Google Play Games</b> and <b>Firebase Authentication</b> (both by Google). Through them we receive your Play Games player name and an account identifier. Your player name is shown to the other players at your table.</p>
+<p>During a game, our game server passes the moves between the players of a table. It needs your IP address to do that, like any server on the internet, and it holds your player name, your account identifier and the state of the table only in memory while the table is open. It does not write them to disk and keeps no record of who played.</p>
+<p>Google keeps a sign-in record for your account in Firebase Authentication (the account identifier and when you signed in). You can ask us to delete it at any time by writing to the address below. See Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+
 <h2>Pictures downloaded from our site</h2>
 <p>The Picture of the Day images and videos, and a small file that tells the game whether a newer version exists, are downloaded from our site, which is hosted on <b>GitHub Pages</b>. As with any website, the hosting provider receives your IP address when these files are requested. No other information about you is sent with these requests.</p>
 
@@ -53,10 +58,10 @@ a{color:#1a56c4}
 <p>GlideTile is not directed at children under 13, and is rated accordingly on Google Play. We do not knowingly collect personal information from children. If you believe a child has provided personal information through our app, contact us and we will address it.</p>
 
 <h2>Data sharing and selling</h2>
-<p>We do not sell personal data. We do not share data with any third party. The Google services and the site hosting described above receive the data listed in their sections and operate under their own policies.</p>
+<p>We do not sell personal data. We do not share data with any third party, other than showing your player name to the players at your own table. The Google services and the site hosting described above receive the data listed in their sections and operate under their own policies.</p>
 
 <h2>Data retention and deletion</h2>
-<p>We hold no personal data on our servers, so there is nothing for us to retain or delete. Usage statistics are held by Google Analytics, in aggregated or pseudonymous form, for a limited period set by that service. Local data (best times, leaderboard entries, any name you typed in) is deleted when you uninstall the app.</p>
+<p>We hold no personal data on our own servers. If you signed in to play with friends, Google holds a sign-in record for us in Firebase Authentication; write to us and we will delete it. Usage statistics are held by Google Analytics, in aggregated or pseudonymous form, for a limited period set by that service. Local data (best times, leaderboard entries, any name you typed in) is deleted when you uninstall the app.</p>
 
 <h2>Changes to this policy</h2>
 <p>Future versions of the game may add features (such as an online leaderboard) that change what data is processed. This page will be updated before any such change takes effect, and the "last updated" date will reflect it.</p>
