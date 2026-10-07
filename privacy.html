@@ -14,10 +14,10 @@ a{color:#1a56c4}
 </head>
 <body>
 <h1>Privacy Policy — GlideTile</h1>
-<p class="small">App: <b>GlideTile</b> (package <code>com.yehuda.glidetile</code>) · Developer: Yehuda P. · Contact: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> · Last updated: October 5, 2026</p>
+<p class="small">App: <b>GlideTile</b> (package <code>com.yehuda.glidetile</code>) · Developer: Yehuda P. · Contact: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> · Last updated: October 7, 2026</p>
 
 <h2>Overview</h2>
-<p>GlideTile is a sliding-tile puzzle game. This policy explains what data is processed when you play, and by whom. The short version: <b>we do not store any personal information on our own servers</b>. You can play without any account. Data is processed on your device, and by Google services that power ads, usage statistics and purchases. Only if you choose to play with friends does the game sign you in with Google Play Games, as described below.</p>
+<p>GlideTile is a sliding-tile puzzle game. This policy explains what data is processed when you play, and by whom. The short version: you can play without any account, and the game never asks for your e-mail or phone number. Google services power ads, usage statistics and purchases. Our own game server keeps what online play and friends need, and, from version 1.13, anonymous statistics about how the game is played. From version 1.13 everything the game sends to our server is encrypted. We never sell data.</p>
 
 <h2>Data stored on your device only</h2>
 <p>Your best times, move counts, and local high-score leaderboard entries (including the player name you type in for a new record) are saved locally on your device. This data never leaves your device and is not uploaded to us or to any server. Uninstalling the app deletes it.</p>
@@ -48,8 +48,13 @@ a{color:#1a56c4}
 
 <h2>Play with friends (optional)</h2>
 <p>Playing at a table with friends is optional, and nothing in this section happens unless you open "Play with friends". When you do, the game signs you in with <b>Google Play Games</b> and <b>Firebase Authentication</b> (both by Google). Through them we receive your Play Games player name and an account identifier. Your player name is shown to the other players at your table.</p>
-<p>During a game, our game server passes the moves between the players of a table. It needs your IP address to do that, like any server on the internet, and it holds your player name, your account identifier and the state of the table only in memory while the table is open. It does not write them to disk and keeps no record of who played.</p>
+<p>Our game server (a "relay", run by us on our own computer and on rented machines at Oracle Cloud and Google Cloud) passes the moves between the players of a table; the moves and the state of a table are held only in memory while the table is open. To run online play, friends and leagues, the server also keeps on disk: your account identifier, your Play Games player identifier and player name, your friends in the game (and, if you allow it in Play Games, which of your Play Games friends also play), the people you recently played with, a notification token so a friend's invitation can reach you, the language of the game, and your league and rating. If you share the game, the link carries a short code; when a friend installs from it, the server records that the friend joined by your code, so both of you get the coins. The server sees your IP address while you are connected, to deliver the game's messages and to limit abuse.</p>
 <p>Google keeps a sign-in record for your account in Firebase Authentication (the account identifier and when you signed in). You can ask us to delete it at any time by writing to the address below. See Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+
+<h2>Anonymous game statistics (from version 1.13)</h2>
+<p>To see which parts of the game work and where players stop, the game creates a random number on your phone. It is not your name, your account, your advertising ID or your phone's serial number, and a new one is made if you reinstall the game. With it the game sends to our server: the day the game was first opened, each day it is opened, the game's events (a puzzle was started, finished or left, with the game mode, board size, moves, seconds and win or loss; a share network was chosen; a league changed; a purchase was completed) and your answers to the game's short questions with how long the game had been open. These statistics are kept for up to 12 months and then deleted. We cannot tie them to you; uninstalling the game ends them.</p>
+<h2>Encryption</h2>
+<p>From version 1.13 every message between the game and our server is encrypted on your phone (keys made fresh each time the game starts, sealed with our server's public key, AES-256 with a signature), so only our server can read it. Google's services and our picture site are reached over HTTPS.</p>
 
 <h2>Pictures downloaded from our site</h2>
 <p>The Picture of the Day images and videos, and a small file that tells the game whether a newer version exists, are downloaded from our site, which is hosted on <b>GitHub Pages</b>. As with any website, the hosting provider receives your IP address when these files are requested. No other information about you is sent with these requests.</p>
@@ -61,15 +66,15 @@ a{color:#1a56c4}
 <p>We do not sell personal data. We do not share data with any third party, other than showing your player name to the players at your own table. The Google services and the site hosting described above receive the data listed in their sections and operate under their own policies.</p>
 
 <h2>Data retention and deletion</h2>
-<p>We hold no personal data on our own servers. If you signed in to play with friends, Google holds a sign-in record for us in Firebase Authentication; write to us and we will delete it. Usage statistics are held by Google Analytics, in aggregated or pseudonymous form, for a limited period set by that service. Local data (best times, leaderboard entries, any name you typed in) is deleted when you uninstall the app.</p>
+<p>Online-play data on our server (account and Play Games identifiers, player name, friends, recent players, notification token, language, league and rating, invitation codes) is kept while you play and deleted on request. Anonymous game statistics are kept for up to 12 months. If you signed in to play with friends, Google holds a sign-in record for us in Firebase Authentication; we delete it on request. Usage statistics are held by Google Analytics, in aggregated or pseudonymous form, for a limited period set by that service. Local data (best times, leaderboard entries, any name you typed in) is deleted when you uninstall the app.</p>
 
 <h2 id="delete">How to delete your data (GlideTile, by Yehuda P.)</h2>
 <p><b>To request deletion:</b> send an email to <a href="mailto:yehuda.g.p@gmail.com?subject=GlideTile%20-%20delete%20my%20data">yehuda.g.p@gmail.com</a> with the subject "GlideTile - delete my data", from the Google account you play with, or include your Play Games player name. We delete within 30 days and confirm by email.</p>
-<p><b>What is deleted:</b> the sign-in record of your account in Firebase Authentication (the account identifier and the sign-in dates). This exists only if you opened "Play with friends".</p>
+<p><b>What is deleted:</b> the sign-in record of your account in Firebase Authentication (the account identifier and the sign-in dates), and everything our server keeps for that account: player name, Play Games identifier, friends, recent players, notification token, language, league and rating, and invitation codes. This exists only if you opened "Play with friends".</p>
 <p><b>What we do not hold, so cannot delete:</b> your scores, coins and settings are stored only on your device and are removed when you uninstall the app or clear its data. Purchases are kept by Google Play under your Google account. Usage statistics are held by Google Analytics in pseudonymous form for a limited period.</p>
 
 <h2>Changes to this policy</h2>
-<p>Future versions of the game may add features (such as an online leaderboard) that change what data is processed. This page will be updated before any such change takes effect, and the "last updated" date will reflect it.</p>
+<p>When the game starts processing new data, this page is updated before that version is released, and the "last updated" date changes.</p>
 
 <h2>Contact</h2>
 <p>Questions or requests: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a></p>
