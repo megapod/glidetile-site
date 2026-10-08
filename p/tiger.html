@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="Can you beat my time? - GlideTile">
+<meta property="og:description" content="Slide the tiles, finish the picture. Free on Google Play.">
+<meta property="og:image" content="https://megapod.github.io/glidetile-site/p/tiger.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://megapod.github.io/glidetile-site/p/tiger.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlideTile - Can you beat my time?</title>
+<!-- The share link (9.10.2026). WhatsApp reads only the start of a page and the Play page carries its
+     preview at byte 1,050,000, so a bare Play link never had a preview. This page has the preview first,
+     then sends the friend to Play with the sharer's code as the install referrer. -->
+<style>
+body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:#0a0e1c;color:#e8ecf5;text-align:center;padding:24px 16px}
+img{width:100%;max-width:520px;border-radius:18px}
+h1{color:#ffb238;font-size:1.6em;margin:.6em 0 .2em}
+a.go{display:inline-block;margin-top:14px;background:#2fbf6b;color:#fff;font-weight:700;padding:14px 28px;border-radius:14px;text-decoration:none;font-size:1.15em}
+p{color:#aeb6c8}
+</style>
+</head>
+<body>
+<img src="tiger.jpg" alt="GlideTile">
+<h1>Can you beat my time?</h1>
+<p id="msg">Opening Google Play...</p>
+<a class="go" id="go" href="https://play.google.com/store/apps/details?id=com.yehuda.glidetile">Get GlideTile on Google Play</a>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var code = (q.get("c") || "").replace(/[^a-z0-9]/gi, "").slice(0, 16);
+  var medium = (q.get("m") || "link").replace(/[^a-z0-9]/gi, "").slice(0, 16);
+  var chal = (q.get("t") || "").replace(/[^a-z0-9_.]/gi, "").slice(0, 40);   // <picture>.<size>.<seconds>
+  var ref = "utm_source=share&utm_medium=" + medium + "&utm_campaign=ambassador" + (code ? "&utm_content=" + code : "")
+    + (chal ? "&utm_term=" + chal : "");
+  var url = "https://play.google.com/store/apps/details?id=com.yehuda.glidetile&referrer=" + encodeURIComponent(ref);
+  document.getElementById("go").href = url;
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {   // no iPhone version yet: say so instead of a dead end
+    document.getElementById("msg").textContent = "GlideTile is on Android for now. Send this link to an Android phone to play.";
+    return;
+  }
+  location.replace(url);
+})();
+</script>
+</body>
+</html>
