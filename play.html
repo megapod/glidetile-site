@@ -33,7 +33,9 @@ p{color:#aeb6c8}
   var q = new URLSearchParams(location.search);
   var code = (q.get("c") || "").replace(/[^a-z0-9]/gi, "").slice(0, 16);
   var medium = (q.get("m") || "link").replace(/[^a-z0-9]/gi, "").slice(0, 16);
-  var ref = "utm_source=share&utm_medium=" + medium + "&utm_campaign=ambassador" + (code ? "&utm_content=" + code : "");
+  var chal = (q.get("t") || "").replace(/[^a-z0-9_.]/gi, "").slice(0, 40);   // <picture>.<size>.<seconds>
+  var ref = "utm_source=share&utm_medium=" + medium + "&utm_campaign=ambassador" + (code ? "&utm_content=" + code : "")
+    + (chal ? "&utm_term=" + chal : "");
   var url = "https://play.google.com/store/apps/details?id=com.yehuda.glidetile&referrer=" + encodeURIComponent(ref);
   document.getElementById("go").href = url;
   if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {   // no iPhone version yet: say so instead of a dead end
