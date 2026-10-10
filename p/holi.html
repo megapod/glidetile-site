@@ -28,8 +28,10 @@ p{color:#aeb6c8}
 <h1>Can you beat my time?</h1>
 <p id="msg">Opening Google Play...</p>
 <a class="go" id="go" href="https://play.google.com/store/apps/details?id=com.yehuda.glidetile">Get GlideTile on Google Play</a>
+<script src="../ga.js"></script>
 <script>
 (function () {
+  gaLoad();
   var q = new URLSearchParams(location.search);
   var code = (q.get("c") || "").replace(/[^a-z0-9]/gi, "").slice(0, 16);
   var medium = (q.get("m") || "link").replace(/[^a-z0-9]/gi, "").slice(0, 16);
@@ -37,12 +39,20 @@ p{color:#aeb6c8}
   var ref = "utm_source=share&utm_medium=" + medium + "&utm_campaign=ambassador" + (code ? "&utm_content=" + code : "")
     + (chal ? "&utm_term=" + chal : "");
   var url = "https://play.google.com/store/apps/details?id=com.yehuda.glidetile&referrer=" + encodeURIComponent(ref);
-  document.getElementById("go").href = url;
-  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {   // no iPhone version yet: say so instead of a dead end
+  var go = document.getElementById("go");
+  go.href = url;
+  var ios = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  var ev = { to: medium, code: code, n: ios ? "ios" : "android" };
+  go.addEventListener("click", function (e) {   // a tap on the button (after the automatic jump did not happen)
+    e.preventDefault();
+    gaEvent("install", ev, function () { location.href = url; });
+  });
+  if (ios) {   // no iPhone version yet: say so instead of a dead end
     document.getElementById("msg").textContent = "GlideTile is on Android for now. Send this link to an Android phone to play.";
+    gaEvent("open", ev);
     return;
   }
-  location.replace(url);
+  gaEvent("open", ev, function () { location.replace(url); });   // counted, then straight on to Play
 })();
 </script>
 </body>
