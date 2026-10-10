@@ -2,7 +2,7 @@
 // and who taps "Get it on Google Play", so the share funnel is not blind between "sent" and "installed".
 // One Firebase web stream of the glidetile project; the measurement id below is the only thing to fill in.
 // Events reuse the game's registered parameters (to = network, what = open / install, code = the sharer's code).
-var GA_ID = "";   // G-XXXXXXXXXX from Firebase console -> Project settings -> Your apps -> Web app (empty = count nothing)
+var GA_ID = "G-DQ8EK45B9V";   // G-XXXXXXXXXX from Firebase console -> Project settings -> Your apps -> Web app (empty = count nothing)
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 function gaLoad() {
