@@ -16,11 +16,13 @@ function gaLoad() {
 }
 // landing(what, params, then): sends one event and calls `then` once it left (or after 400 ms, whichever first),
 // so the redirect to Play never waits on Google and never loses the event either.
+// 13.10.2026: on a phone gtag.js takes longer than 400 ms to arrive, so the redirect left first and no open was ever
+// counted (22 shares, "0 opens"). Now the redirect waits for Google's callback, at most 1.6 s.
 function gaEvent(what, params, then) {
   var done = false, go = function () { if (!done) { done = true; if (then) { then(); } } };
   if (!GA_ID) { go(); return; }
   var p = {}; for (var k in params) { if (params[k]) { p[k] = params[k]; } }
-  p.what = what; p.event_callback = go; p.event_timeout = 400;
+  p.what = what; p.event_callback = go; p.event_timeout = 1500;
   gtag("event", "landing", p);
-  setTimeout(go, 450);
+  setTimeout(go, 1600);
 }
