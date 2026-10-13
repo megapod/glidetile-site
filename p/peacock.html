@@ -52,7 +52,11 @@ p{color:#aeb6c8}
     gaEvent("open", ev);
     return;
   }
-  gaEvent("open", ev, function () { location.replace(url); });   // counted, then straight on to Play
+  // Android: the Play app itself (13.10.2026: Chrome asked "Continue to Google Play Store?" and then stayed white on the
+  // OnePlus); the button keeps the web address as the way out if the app does not open
+  var app = "intent://details?id=com.yehuda.glidetile&referrer=" + encodeURIComponent(ref)
+    + "#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=" + encodeURIComponent(url) + ";end";
+  gaEvent("open", ev, function () { location.href = app; });   // counted, then straight on to Play
 })();
 </script>
 </body>
