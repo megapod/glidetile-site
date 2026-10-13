@@ -258,6 +258,21 @@
    "caption": "Owl",
    "credit": "Video: Rathaphon Nanthapreecha · Pexels",
    "level": "medium"
+  },
+  {
+   "id": "gen_farm_market",
+   "caption": "Farmers Market",
+   "level": "medium"
+  },
+  {
+   "id": "gen_funfair",
+   "caption": "Funfair",
+   "level": "medium"
+  },
+  {
+   "id": "gen_winter_village",
+   "caption": "Snowy Village",
+   "level": "medium"
   }
  ],
  "videos": [
