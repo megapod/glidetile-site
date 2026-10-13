@@ -9,6 +9,8 @@ function gaLoad() {
   if (!GA_ID) { return false; }
   var s = document.createElement("script");
   s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+  s.onload = function () { window.__gaReady = true; };   // the event is sent only once the library is here
+  s.onerror = function () { window.__gaReady = "fail"; };
   document.head.appendChild(s);
   gtag("js", new Date());
   gtag("config", GA_ID, { send_page_view: false, transport_type: "beacon" });
@@ -23,6 +25,12 @@ function gaEvent(what, params, then) {
   if (!GA_ID) { go(); return; }
   var p = {}; for (var k in params) { if (params[k]) { p[k] = params[k]; } }
   p.what = what; p.event_callback = go; p.event_timeout = 1500;
-  gtag("event", "landing", p);
-  setTimeout(go, 1600);
+  // 13.10.2026, measured in a phone browser: queued before gtag.js arrived, the event never left and the page was
+  // already on Play. Wait for the library (at most 2.5 s), send, then wait for Google's callback (at most 1.5 s).
+  var t0 = Date.now();
+  (function send() {
+    if (window.__gaReady === true) { gtag("event", "landing", p); setTimeout(go, 1600); return; }
+    if (window.__gaReady === "fail" || Date.now() - t0 > 2500) { go(); return; }
+    setTimeout(send, 50);
+  })();
 }
