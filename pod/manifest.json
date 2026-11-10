@@ -273,6 +273,31 @@
    "id": "gen_winter_village",
    "caption": "Snowy Village",
    "level": "medium"
+  },
+  {
+   "id": "gen_holi",
+   "caption": "Holi Festival",
+   "level": "medium"
+  },
+  {
+   "id": "gen_spice_bazaar",
+   "caption": "Spice Bazaar",
+   "level": "medium"
+  },
+  {
+   "id": "gen_city_park",
+   "caption": "City Park",
+   "level": "medium"
+  },
+  {
+   "id": "gen_harbor_town",
+   "caption": "Harbor Town",
+   "level": "medium"
+  },
+  {
+   "id": "gen_toy_shop",
+   "caption": "Toy Shop",
+   "level": "medium"
   }
  ],
  "videos": [
